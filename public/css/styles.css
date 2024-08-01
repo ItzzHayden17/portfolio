@@ -1,0 +1,369 @@
+body{
+  font-family: 'Anton', sans-serif;
+    color: white;
+    /* cursor: url("../assets/R&M bottle cursor96.png"),auto; */
+    overflow-x: hidden;
+
+}
+
+p{
+  color: black;
+}
+.border-radius{
+  border-radius: 5%;
+}
+.draw{
+  font-family: 'Delicious Handrawn', cursive;
+}
+.free{
+  position: absolute;
+  font-size: 30px;
+  rotate: 60deg;
+  left: 60%;
+  top: 20%;
+
+}
+.gradient-background{   
+     background-image: linear-gradient(to right, #05AABD , #CF01FE);
+    animation: gradient-animation 18s ease infinite;
+    background-size: 180% 180%;
+}
+.navbar{
+    background-image: linear-gradient(to right, #05AABD , #CF01FE);
+    color: white;
+}
+
+h1{
+
+    font-weight: 900;
+    font-size: 90px;
+}
+
+.first-section {
+    background-image: linear-gradient(to right, #05AABD , #CF01FE);
+    padding: 10%;
+    height: 80vh;
+    width: 100%;
+  }
+
+
+  .grid-container{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 1fr ;
+    gap: 40px;
+    padding: 5% 8%;
+    font-size: 40px;
+  }
+
+
+  .feature {
+    border-radius: 5%;
+    padding: 5px;
+  }
+
+  .feature:hover{
+    box-shadow: 0 5px 15px rgb(0, 0, 0,8);
+
+  }
+
+  .transform-1{
+    animation: MoveUpDown 3s linear infinite;
+    position: relative;
+  }
+  .transform-2{
+    animation: MoveDownUp 3s linear infinite;
+    position: relative;
+  }
+
+  .span-img{
+    grid-row: span 2;
+    background-image: url("../assets/me.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid rgb(211, 211, 211) 1px;
+  }
+
+  .span-column{
+    grid-column: span 2;
+    
+  }
+
+  .white-background-wrap{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 5%;
+
+  }
+
+  .colum-span-img{
+    background-image: url("/assets/R&M drawing.png");
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    border-radius: 5%;
+  }
+  .feature-context{
+ 
+
+    padding: 5%;
+    margin-left: auto;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #05AABD , #CF01FE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+  *, *:before, *:after{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+  }
+  .circle{
+    position: absolute;
+    margin-left: 10%;
+    width: 300px;
+    height: 300px;
+    border: 5px solid #FFFFFF;
+    cursor: grab;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .wave{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #4DF4FE;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px 0 rgba(0, 0, 0, 0.5);
+  }
+  .wave:before,
+  .wave:after{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 200%;
+    background: red;
+    transform: translate(-50%, -75%);
+  }
+  .wave:before{
+    border-radius: 45%;
+    background: #2D0F94;
+    animation: animate 5s linear infinite;
+  }
+  .wave:after{
+    border-radius: 40%;
+    background: #CF01FE;
+    animation: animate 10s linear infinite;
+  }
+  
+  @keyframes animate{
+    0%{
+      transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100%{
+      transform: translate(-50%, -75%) rotate(360deg);
+    }
+  }
+  
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes MoveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+  }
+
+  @keyframes MoveDownUp {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(6px);
+    }
+  }
+
+
+
+
+/* About me: */
+
+.about{
+  color: #000000;
+
+}
+
+.left-section{
+  width: 50%;
+  position: absolute;
+}
+
+.about-image{
+  z-index: -1;
+
+  position: relative;
+
+}
+
+
+/* languages */
+
+
+
+.html-gradient-background{
+ background: linear-gradient(to top, #e07b07 , #864903);
+}
+.boot-gradient-background{
+  background: linear-gradient(to right, #05AABD , #CF01FE)
+ }
+
+.css-gradient-background{
+  background: linear-gradient(to top, #023d5f , #08a4ff);
+ }
+
+ .node-gradient-background{
+  background: linear-gradient(to right, #48bd05 , #585858);
+ }
+
+ .react-gradient-background{
+  background: linear-gradient(to top, #abddfa , #40aeee);
+ }
+
+ .dom-gradient-background{
+  background: linear-gradient(to left, #8ed6ff , #1a1919);
+ }
+
+ .sql-gradient-background{
+  background: linear-gradient(to left, #001c2c , #000000);
+ }
+
+ .auth-gradient-background{
+  background: linear-gradient(to left, #f30505 , #000000);
+ }
+ .express-gradient-background{
+  background: linear-gradient(to left, #868686 , #000000);
+ }
+
+
+ /* Projects */
+
+ .shake:hover{
+  animation: shake 0.2s;
+  animation-iteration-count: 1;
+  
+ }
+
+ @keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+/* Contact form */
+
+.contact-form{
+  width: 50%;
+  padding: 0 5% 5% 5%;
+}
+
+input{
+  margin: 5px 0;
+  width: 100%;
+  padding: 4px;
+  border-radius: 5px;
+  border-color: #08a4ff;
+}
+
+textarea{
+  width: 100%;
+  padding: 4px;
+  border-radius: 5px;
+  border-color: #08a4ff;
+}
+
+@media  (max-width: 1000px) {
+.free{
+  display: none;
+}
+.draggable{
+  display: none;
+}
+.first-section{
+  padding: 30% 0 0 0;
+}
+
+.none{
+  display: none;
+}
+
+.grid-container{
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap:10px;
+  font-size: 30px;
+}
+.feature-context{
+  padding: 12px;
+}
+.contact-form{
+  width: 90%;
+}
+
+.about-image{
+  display: none;
+}
+.about-altimage{
+  padding-top: 70%;
+  padding-left: 40%;
+}
+.left-section{
+  width: 90%;
+  position: absolute;
+}
+@keyframes MoveUpDown {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-4px);
+  }
+}
+
+@keyframes MoveDownUp {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(4px);
+  }
+}
+}

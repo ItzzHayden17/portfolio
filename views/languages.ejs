@@ -1,0 +1,42 @@
+<%- include('partials/header') -%>
+
+<a href="/"><button type="button" class="btn btn-dark my-4 mx-4 shake">Go back</button></a>
+<a href="/projects"><button type="button" class="btn btn-primary gradient-background">Go to Projects</button></a>
+<div class="container px-4 py-5" id="custom-cards">
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-0">
+
+
+      <%languagesArray.forEach(function(language){ %>
+        
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg <%= language.className %>" >
+          <div class="d-flex flex-column h-10 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><%= language.language %></h3>
+
+
+            <ul class="d-flex list-unstyled mt-auto">
+
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                <small>Rating:</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small>
+                  <%= language.rating %>
+                </small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <%})%>
+
+
+    </div> 
+
+</div>
+
+       
+<%- include('partials/footer') -%>

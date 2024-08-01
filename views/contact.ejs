@@ -1,0 +1,18 @@
+<%-  include('partials/header') -%>
+<a href="/#"><button type="button" class="btn btn-dark my-4 mx-4 shake shake">Go back</button></a>
+<a href="/certification "><button type="button" class="btn btn-primary gradient-background">Go to Certificates</button></a>
+
+<div class="container contact-form" >
+    <form action="mailto:sony.anray743@gmail.com" method="get" id="myform" >
+    <input type="text" name="Subject" placeholder="Name" autofocus required><br>
+    <input type="text" name="email" placeholder="Email" ><br>
+    <textarea name="Body" cols="30" rows="10" placeholder="Message" required></textarea><br>
+
+</form>
+<button type="submit" form="myform" class="btn btn-primary gradient-background mt-3">Submit</button>
+
+</div>
+
+
+
+<%- include("partials/footer") -%>
