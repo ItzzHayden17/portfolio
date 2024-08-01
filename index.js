@@ -139,13 +139,13 @@ var projectsArray = [
         name:"Move It",
         link:"/Move-it/index.html",
         description:"A simple yet eye-catching website for a moving company based in the US.The website has been designed to be responsive for different viewing experiences",
-        imgSrc:"assets/move-with-joy.png"
+        imgSrc:"./assets/move-with-joy.png"
     },
     {
         name:"TinDog",
         link:"/TinDog/index.html",
         description:"A fun and and intriguing turn on the social app 'TINDER',where you can get a friend or even a soulmate for your dog,WOOF!",
-        imgSrc:"assets/tindog.png"
+        imgSrc:"./assets/tindog.png"
     },
     {
         name:"Simon Game",
@@ -157,13 +157,13 @@ var projectsArray = [
         name:"Public Dog API",
         link:"/dog-api",
         description:"Get random pictures of a certain dog breed via API!",
-        imgSrc:"assets/dog-breed-api.png"
+        imgSrc:"./assets/dog-breed-api.png"
     },
     {
         name:"Keeper App",
         link:"https://58bxk.csb.app/",
         description:"My own twist on Google's keeper App.This projects uses React and UseState to function and is hosted on Sandbox.io!",
-        imgSrc:"assets/keeper-app.png"
+        imgSrc:"./assets/keeper-app.png"
     }
     
     
