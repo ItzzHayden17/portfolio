@@ -139,31 +139,31 @@ var projectsArray = [
         name:"Move It",
         link:"/Move-it/index.html",
         description:"A simple yet eye-catching website for a moving company based in the US.The website has been designed to be responsive for different viewing experiences",
-        imgSrc:"./assets/move-with-joy.png"
+        imgSrc:"https://elevate-estates.s3.ap-southeast-2.amazonaws.com/move-with-joy.PNG"
     },
     {
         name:"TinDog",
         link:"/TinDog/index.html",
         description:"A fun and and intriguing turn on the social app 'TINDER',where you can get a friend or even a soulmate for your dog,WOOF!",
-        imgSrc:"./assets/tindog.png"
+        imgSrc:"https://elevate-estates.s3.ap-southeast-2.amazonaws.com/tindog.PNG"
     },
     {
         name:"Simon Game",
         link:"/Simon/index.html",
         description:"A new iteration of the old-timey game 'Simon',this on is just online :)",
-        imgSrc:"assets/simon-game.png"
+        imgSrc:"https://elevate-estates.s3.ap-southeast-2.amazonaws.com/simon-game.PNG"
     },
     {
         name:"Public Dog API",
         link:"/dog-api",
         description:"Get random pictures of a certain dog breed via API!",
-        imgSrc:"./assets/dog-breed-api.png"
+        imgSrc:"https://elevate-estates.s3.ap-southeast-2.amazonaws.com/dog-breed-api.PNG"
     },
     {
         name:"Keeper App",
         link:"https://58bxk.csb.app/",
         description:"My own twist on Google's keeper App.This projects uses React and UseState to function and is hosted on Sandbox.io!",
-        imgSrc:"./assets/keeper-app.png"
+        imgSrc:"https://elevate-estates.s3.ap-southeast-2.amazonaws.com/keeper-app.PNG"
     }
     
     
